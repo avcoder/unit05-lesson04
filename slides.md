@@ -129,6 +129,8 @@ Function search(value):
     Return false (value not found)
 ```
 
+- Instead of doing basic math like dividing array by 2 then rounding in order to get the midpoint, we just follow the pointers
+
 ---
 transition: slide-left
 ---
