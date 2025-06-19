@@ -36,10 +36,10 @@ transition: slide-left
 # Recap
 Imagine we have a sorted array: `[1, 2, 3, 4, 5, 6, 7]`
 
-- We can create stacks/queues/arrays using:
-   - regular array data structure
+- We can create stacks/queues using:
    - linked list data structure
 - Binary Search allowed us to use recursion to search left side vs right side
+   - to do so required us to take the array length and divide by 2 then round it to get midpoint 
    - Can we do binary search on a linked list? 
       - Do we have a way to "go left" using a single linked list?
       - Do we have a way to pick the middle?
