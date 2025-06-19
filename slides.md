@@ -523,8 +523,7 @@ function dijkstra(graph, startNode):
     Create a map called distances, where every node is set to Infinity    // Step 1: Set up distances and visited
     Set distances[startNode] to 0
 
-    Create a priority queue (min-heap) and add startNode with distance 0
-
+    Create a priority queue and add startNode with distance 0
     Create a set to keep track of visited nodes
 
     while priority queue is not empty: // Step 2: Loop until we’ve checked all nodes
@@ -553,7 +552,9 @@ transition: slide-left
 # Exercise: 
 Find the shortest path from 0 to 4
 
-<img src="/assets/dij3.png" width="550">
+<img src="/assets/dij3.png" width="500">
+
+- Follow along at https://www.cs.usfca.edu/~galles/visualization/Dijkstra.html
 
 ---
 transition: slide-left
