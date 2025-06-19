@@ -474,15 +474,21 @@ transition: slide-left
 
 # Pseudocode of Dijkstra's Algorithm
 
-1. Set the distance to the start node as 0, all others as Infinity.
-2. Add all nodes to a priority queue 
-3. While the queue is not empty:
-   - Remove the node with the smallest distance.
-   - Update distances to its neighbors if a shorter path is found.
-   - Mark the node as visited.
-4. Repeat until all shortest paths are found.
+1. Start by assigning a distance value to every node:
+    - Set the distance to the starting node as 0.
+    - Set the distance to all other nodes as infinity (∞) because we haven't found a path to them yet.
+2. Create a list (or priority queue) of all the nodes that need to be checked.
+3. While there are still nodes to check:
+    a. Pick the node with the smallest distance value (let's call this the "current node").
+    b. Look at all the neighboring nodes connected to the current node.
+    c. For each neighbor:
+        - Calculate the distance from the start node to this neighbor by going through the current node.
+        - If this new path is shorter than the distance we had recorded before:
+            - Update the shortest distance for that neighbor.
+    d. Once done checking all neighbors, mark the current node as "visited" so we don't check it again.
+4. When all nodes have been visited, the shortest distance to each node from the start is known.
 
-<img src="/assets/dij1.png" width="500">
+
 
 ---
 transition: slide-left
