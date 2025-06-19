@@ -571,5 +571,7 @@ transition: slide-left
 
 - Start thinking about which of the 4 topics you'll use for your "Algorithm and Structural Foundation" assignment due July 20
    - 4 Topics will be listed here: https://unit05-lesson5to8.netlify.app/
+   - Starting next class, you'll have the entire period to work on your assignment 
+   - The next 4 classes will be PBL - Problem Based Learning where you're [introduced with a problem](https://unit05-lesson5to8.netlify.app/), you'll form groups, conduct research, ask questions, and apply your findings.
 - Tree exercises: https://leetcode.com/problem-list/tree/
 - Graph exercises: https://leetcode.com/problem-list/graph/
