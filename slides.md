@@ -49,6 +49,14 @@ Imagine we have a sorted array: `[1, 2, 3, 4, 5, 6, 7]`
 transition: slide-left
 ---
 
+# Big O Recap
+
+<img src="/assets/bigo.jpg" width="800">
+
+---
+transition: slide-left
+---
+
 # Data Structure: Trees
 
 - A tree is a non-linear hierarchical data structure. (2-dimensional)
