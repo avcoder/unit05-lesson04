@@ -179,6 +179,7 @@ transition: slide-left
 - Dependency graphs in compilers and build systems.
 - Knowledge graphs for AI and search engines.
 
+<img src="/assets/facebook.webp" width="400">
 ---
 transition: slide-left
 ---
