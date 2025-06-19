@@ -97,7 +97,7 @@ transition: slide-left
 
 # Big O for Trees
 
-| **Operation**           | **Balanced BST** (e.g., AVL, Red-Black) | **Unbalanced BST** |
+| **Operation**           | **Balanced BST** (e.g., [AVL](https://en.wikipedia.org/wiki/AVL_tree), [Red-Black](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree)) | **Unbalanced BST** |
 | ----------------------- | --------------------------------------- | ------------------ |
 | **Search**              | O(log n)                                | O(n)               |
 | **Insert**              | O(log n)                                | O(n)               |
