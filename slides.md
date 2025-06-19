@@ -449,11 +449,54 @@ transition: slide-left
    - Directed or undirected graphs
 - Used in: GPS navigation, Network routing, Pathfinding in games
 
+<img src="/assets/dij2.jpg" width="500">
+
+---
+transition: slide-left
+---
+
+# Key Concepts
+
+| Term               | Definition                                     |
+| ------------------ | ---------------------------------------------- |
+| **Vertex**         | A node in the graph                            |
+| **Edge**           | A connection between two vertices              |
+| **Weight**         | Cost to travel from one node to another        |
+| **Distance Table** | Stores shortest known distances from the start |
+| **Visited Set**    | Tracks nodes whose shortest path is finalized  |
+| **Priority Queue** | Picks the next closest node to explore         |
+
+
+
+---
+transition: slide-left
+---
+
+# Pseudocode of Dijkstra's Algorithm
+
+1. Set the distance to the start node as 0, all others as Infinity.
+2. Add all nodes to a priority queue 
+3. While the queue is not empty:
+   - Remove the node with the smallest distance.
+   - Update distances to its neighbors if a shorter path is found.
+   - Mark the node as visited.
+4. Repeat until all shortest paths are found.
+
 <img src="/assets/dij1.png" width="500">
 
 ---
 transition: slide-left
 ---
+
+# Exercise: 
+Find the shortest path from 0 to 4
+
+<img src="/assets/dij3.png" width="550">
+
+---
+transition: slide-left
+---
+
 
 # Homework
 
