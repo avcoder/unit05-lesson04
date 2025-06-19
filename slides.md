@@ -321,6 +321,53 @@ transition: slide-left
 | **BFS (Breadth-First Search)** | Traverses the graph level by level, exploring neighbors first                       |
 
 
+
+---
+transition: slide-left
+---
+
+# Graph Usage 
+
+```js
+// Create a graph
+const graph = new Graph();
+graph.addVertex(1);
+graph.addVertex(2);
+graph.addEdge(1, 2);
+```
+
+1 —— 2
+
+---
+transition: slide-left
+---
+
+# Graph Usage (pg.2)
+
+```js
+// Create the graph
+const graph = new Graph();
+
+// Add vertices
+['A', 'B', 'C', 'D', 'E'].forEach(v => graph.addVertex(v));
+
+// Add edges
+graph.addEdge('A', 'B');
+graph.addEdge('A', 'C');
+graph.addEdge('B', 'D');
+graph.addEdge('C', 'D');
+graph.addEdge('D', 'E');
+```
+
+       A
+      / \
+     B   C
+      \ / 
+       D
+       |
+       E
+
+
 ---
 transition: slide-left
 ---
