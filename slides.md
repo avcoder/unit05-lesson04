@@ -576,6 +576,114 @@ function dijkstra(graph, startNode):
     return distances
 ```
 
+---
+transition: slide-left
+---
+
+# Dijkstra Usage
+
+- notice how the weight of each edge is now included 
+```js
+const graph = {
+    A: { B: 4, C: 2 },
+    B: { E: 3 },
+    C: { D: 2, F: 4 },
+    D: { E: 3 },
+    E: { F: 1 },
+    F: {}
+};
+
+const result = dijkstra(graph, "A");
+
+console.log("Shortest distances from A:", result.distances);
+console.log("Previous nodes (paths):", result.previous);
+```
+
+- distances: shortest distances from the start node to every other node.
+- previous: to reconstruct the shortest path (if needed).
+
+---
+transition: slide-left
+---
+
+# Dijkstra Implementation (pg.1)
+
+```js
+class PriorityQueue {
+    constructor() {
+        this.values = [];
+    }
+
+    enqueue(node, priority) {
+        this.values.push({ node, priority });
+        this.sort();
+    }
+
+    dequeue() {
+        return this.values.shift(); // remove the node with the smallest priority
+    }
+
+    isEmpty() {
+        return this.values.length === 0;
+    }
+
+    sort() {
+        this.values.sort((a, b) => a.priority - b.priority);
+    }
+}
+```
+
+---
+transition: slide-left
+---
+
+# Dijkstra Implementation (pg.2)
+
+```js
+function dijkstra(graph, start) {
+    const distances = {};
+    const previous = {};
+    const pq = new PriorityQueue();
+
+    // Initialize distances and previous
+    for (let node in graph) {
+        if (node === start) {
+            distances[node] = 0;
+            pq.enqueue(node, 0);
+        } else {
+            distances[node] = Infinity;
+            pq.enqueue(node, Infinity);
+        }
+        previous[node] = null;
+    }
+}
+```
+
+---
+transition: slide-left
+---
+
+# Dijkstra Implementation (pg.3)
+
+```js
+
+    while (!pq.isEmpty()) {
+        const { node: currentNode } = pq.dequeue();
+
+        for (let neighbor in graph[currentNode]) {
+            let distance = graph[currentNode][neighbor];
+            let totalDistance = distances[currentNode] + distance;
+
+            if (totalDistance < distances[neighbor]) {
+                distances[neighbor] = totalDistance;
+                previous[neighbor] = currentNode;
+                pq.enqueue(neighbor, totalDistance);
+            }
+        }
+    }
+
+    return { distances, previous };
+```
 
 ---
 transition: slide-left
