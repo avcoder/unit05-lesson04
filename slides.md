@@ -95,21 +95,6 @@ transition: slide-left
 transition: slide-left
 ---
 
-# Big O for Trees
-
-| **Operation**           | **Balanced BST** (e.g., [AVL](https://en.wikipedia.org/wiki/AVL_tree), [Red-Black](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree)) | **Unbalanced BST** |
-| ----------------------- | --------------------------------------- | ------------------ |
-| **Search**              | O(log n)                                | O(n)               |
-| **Insert**              | O(log n)                                | O(n)               |
-| **Delete**              | O(log n)                                | O(n)               |
-| **Traversal (DFS/BFS)** | O(n)                                    | O(n)               |
-| **Access Min/Max**      | O(log n)                                | O(n)               |
-
-
----
-transition: slide-left
----
-
 # Binary Search Pseudocode using Trees
 
 ```md
@@ -130,6 +115,24 @@ Function search(value):
 ```
 
 - Instead of doing basic math like dividing array by 2 then rounding in order to get the midpoint, we just follow the pointers
+- Tradeoff: 
+   - more space is used
+   - What happens if it just happens that the numbers inputted are always put on the right hand side?
+
+---
+transition: slide-left
+---
+
+# Big O for Trees
+
+| **Operation**           | **Balanced BST** (e.g., [AVL](https://en.wikipedia.org/wiki/AVL_tree), [Red-Black](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree)) | **Unbalanced BST** |
+| ----------------------- | --------------------------------------- | ------------------ |
+| **Search**              | O(log n)                                | O(n)               |
+| **Insert**              | O(log n)                                | O(n)               |
+| **Delete**              | O(log n)                                | O(n)               |
+| **Traversal (DFS/BFS)** | O(n)                                    | O(n)               |
+| **Access Min/Max**      | O(log n)                                | O(n)               |
+
 
 ---
 transition: slide-left
