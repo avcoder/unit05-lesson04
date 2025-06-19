@@ -175,6 +175,25 @@ const mother = {
 transition: slide-left
 ---
 
+# Tree Operations
+
+| **Operation**             | **Description**                                                                 |
+| ------------------------- | ------------------------------------------------------------------------------- |
+| **Insert**                | Adds a new node to the tree, maintaining binary search tree (BST) structure     |
+| **Search**                | Finds a node with a specific value                                              |
+| **Delete**                | Removes a node and restructures the tree if needed                              |
+| **In-order Traversal**    | Visits nodes in left-root-right order (outputs sorted values in a BST)          |
+| **Find Min**              | Locates the node with the smallest value (leftmost node in a BST)               |
+| **Find Max**              | Locates the node with the largest value (rightmost node in a BST)               |
+| **Height**                | Measures the longest path from the root to a leaf node                          |
+| **Check Balanced**        | Determines if the tree is height-balanced (difference in subtree heights ≤ 1)   |
+
+
+
+---
+transition: slide-left
+---
+
 # Tree Implementation
 
 ```md
@@ -241,6 +260,25 @@ transition: slide-left
 | **Check Edge Exists**               | O(V)               | O(1)                  | Matrix is faster for dense graphs                   |
 | **DFS / BFS Traversal**             | O(V + E)           | O(V²)                 | Depends on the number of vertices (V) and edges (E) |
 | **Dijkstra’s Algorithm (Min Heap)** | O((V + E) log V)   | O(V²)                 | Efficient with priority queue and list              |
+
+
+
+---
+transition: slide-left
+---
+
+# Graph Operations
+
+| **Operation**                  | **Description**                                                                     |
+| ------------------------------ | ----------------------------------------------------------------------------------- |
+| **Add Vertex**                 | Adds a new node (vertex) to the graph                                               |
+| **Add Edge**                   | Creates a connection (edge) between two vertices                                    |
+| **Remove Vertex**              | Deletes a vertex and all edges connected to it                                      |
+| **Remove Edge**                | Deletes the connection between two vertices                                         |
+| **Check Edge Exists**          | Determines whether there is a connection between two vertices                       |
+| **Get Neighbors**              | Returns a list of vertices directly connected to a given vertex                     |
+| **DFS (Depth-First Search)**   | Traverses the graph by exploring as far as possible along each branch               |
+| **BFS (Breadth-First Search)** | Traverses the graph level by level, exploring neighbors first                       |
 
 
 ---
