@@ -43,7 +43,7 @@ Imagine we have a sorted array: `[1, 2, 3, 4, 5, 6, 7]`
    - Can we do binary search on a linked list? 
       - Do we have a way to "go left" using a single linked list?
       - Do we have a way to pick the middle?
-   - Problem: Need a better data structure that is works better than O(n) to search/insert/delete a sorted list 
+- Problem: Need a better data structure that's better than O(n) to search/insert/delete a sorted list 
 
 ---
 transition: slide-left
@@ -90,6 +90,21 @@ transition: slide-left
 | **Leaf**    | A node that has no children.                                            |
 | **Edge**    | A connection between two nodes (parent to child).                       |
 | **Depth**   | The number of edges from the root node to a given node.                 |
+
+---
+transition: slide-left
+---
+
+# Big O for Trees
+
+| **Operation**          | **Binary Tree (Unordered)** | **Binary Search Tree (Balanced)** | **Binary Search Tree (Unbalanced)** |
+| ---------------------- | --------------------------- | --------------------------------- | ----------------------------------- |
+| **Search**             | O(n)                        | O(log n)                          | O(n)                                |
+| **Insert**             | O(n)                        | O(log n)                          | O(n)                                |
+| **Delete**             | O(n)                        | O(log n)                          | O(n)                                |
+| **Traverse (DFS/BFS)** | O(n)                        | O(n)                              | O(n)                                |
+| **Access Min/Max**     | O(n)                        | O(log n)                          | O(n)                                |
+
 
 ---
 transition: slide-left
@@ -163,6 +178,23 @@ transition: slide-left
 - Recommendation engines (Amazon, Netflix).
 - Dependency graphs in compilers and build systems.
 - Knowledge graphs for AI and search engines.
+
+---
+transition: slide-left
+---
+
+# Big O for Graph
+
+| **Operation / Algorithm**           | **Adjacency List** | **Adjacency Matrix**  | **Notes**                                           |
+| ----------------------------------- | ------------------ | --------------------- | --------------------------------------------------- |
+| **Add Vertex**                      | O(1)               | O(n²) (resize needed) | List is more efficient for dynamic growth           |
+| **Add Edge**                        | O(1)               | O(1)                  | Constant time in both                               |
+| **Remove Vertex**                   | O(V + E)           | O(n²)                 | Must remove associated edges                        |
+| **Remove Edge**                     | O(V) (search list) | O(1)                  | Matrix allows direct access                         |
+| **Check Edge Exists**               | O(V)               | O(1)                  | Matrix is faster for dense graphs                   |
+| **DFS / BFS Traversal**             | O(V + E)           | O(V²)                 | Depends on the number of vertices (V) and edges (E) |
+| **Dijkstra’s Algorithm (Min Heap)** | O((V + E) log V)   | O(V²)                 | Efficient with priority queue and list              |
+
 
 ---
 transition: slide-left
