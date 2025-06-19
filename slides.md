@@ -222,6 +222,16 @@ class TreeNode {
 transition: slide-left
 ---
 
+# Story about Euler
+
+<img src="/assets/Euler2.jpg">
+
+https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/birth-graph-theory-leonhard-euler-and-konigsberg-bridge-problem
+
+---
+transition: slide-left
+---
+
 # Data Structure: Graphs
 
 - A graph is a collection of nodes (vertices) and edges (connections).  It can be:
@@ -245,6 +255,26 @@ transition: slide-left
 - Knowledge graphs for AI and search engines.
 
 <img src="/assets/facebook.jpeg" width="700">
+
+
+---
+transition: slide-left
+---
+
+# Graph Terminology
+
+| **Term**               | **Definition**                                                                 |
+| ---------------------- | ------------------------------------------------------------------------------ |
+| **Vertex (Node)**      | A fundamental unit of a graph representing a point or object                   |
+| **Edge**               | A connection between two vertices                                              |
+| **Adjacency**          | Two vertices are adjacent if they are connected directly by an edge            |
+| **Adjacent List**      | A way to represent a graph where each vertex stores a list of its neighbors    |
+| **Directed Graph**     | A graph where edges have a direction (u → v)                                   |
+| **Undirected Graph**   | A graph where edges have no direction (u — v)                                  |
+| **Weighted Graph**     | A graph where edges have numerical values (weights) associated with them       |
+| **Cycle**              | A path where the first and last vertex are the same, and no other nodes repeat |
+
+
 ---
 transition: slide-left
 ---
