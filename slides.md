@@ -472,6 +472,19 @@ transition: slide-left
 transition: slide-left
 ---
 
+# Big O for Dijkstra's Algorithm
+
+| **Data Structure Used**       | **Time Complexity**  | **Space Complexity** | **Notes**                                           |
+| ----------------------------- | -------------------- | -------------------- | --------------------------------------------------- |
+| **Adjacency List + Min Heap** | `O((V + E) * log V)` | `O(V)`               | ✅ Most efficient for sparse graphs                  |
+| **Adjacency List + Array**    | `O(V²)`              | `O(V)`               | ❌ Slower, used in simple implementations            |
+| **Adjacency Matrix**          | `O(V²)`              | `O(V²)`              | ⚠️ Good for dense graphs, but uses more space       |
+
+
+---
+transition: slide-left
+---
+
 # Pseudocode of Dijkstra's Algorithm (v.1)
 
 1. Imagine you are starting in your hometown.
