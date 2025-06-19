@@ -457,6 +457,7 @@ transition: slide-left
 
 # Homework
 
-- Work on your "Note-taking" midterm app due June 15 midnight EST
-   - can submit before due date if you wish
-- Recursion exercises: https://leetcode.com/problem-list/recursion/
+- Start thinking about which of the 4 topics you'll use for your "Algorithm and Structural Foundation" assignment due July 20
+   - 4 Topics will be listed here: https://unit05-lesson5to8.netlify.app/
+- Tree exercises: https://leetcode.com/problem-list/tree/
+- Graph exercises: https://leetcode.com/problem-list/graph/
