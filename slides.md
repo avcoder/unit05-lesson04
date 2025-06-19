@@ -239,6 +239,7 @@ transition: slide-left
    - Cyclic or Acyclic
    - Weighted or Unweighted
    - More general than trees (no root required, can have cycles).
+   - Q: Imagine how you might code this?
 
 <img src="/assets/graph.webp" width="700">
 
