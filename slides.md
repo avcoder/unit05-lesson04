@@ -443,7 +443,7 @@ transition: slide-left
 
 # Dijkstra's Algorithm
 
-- Dijkstra’s Algorithm finds the shortest path from a starting node to all other nodes in a weighted graph
+- [Dijkstra’s Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) finds the shortest path from a starting node to all other nodes in a weighted graph
 - It works with:
    - Positive edge weights only
    - Directed or undirected graphs
