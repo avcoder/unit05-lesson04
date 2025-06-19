@@ -114,7 +114,7 @@ Function search(value):
     Return false (value not found)
 ```
 
-- Instead of doing basic math like dividing array by 2 then rounding in order to get the midpoint, we just follow the pointers
+- Instead of doing basic math like dividing array by 2 then rounding in order to get the midpoint, we just follow the pointers which gives us O(log n)
 - Tradeoff: 
    - more space is used
    - What happens if it just happens that the numbers inputted are always put on the right hand side?
