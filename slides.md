@@ -280,7 +280,7 @@ transition: slide-left
 
 # 2 Ways to Represent a Graph
 
-- Adjacency List (most used) vs Adjacency List (takes up too much memory space)
+- Adjacency List (most used) vs Adjacency List (takes up too much memory space O(V^2))
 
 <img src="/assets/adjvs.svg" width="900">
 
