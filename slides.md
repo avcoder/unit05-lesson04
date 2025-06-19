@@ -480,7 +480,9 @@ transition: slide-left
 | **Adjacency List + Array**    | `O(V²)`              | `O(V)`               | ❌ Slower, used in simple implementations            |
 | **Adjacency Matrix**          | `O(V²)`              | `O(V²)`              | ⚠️ Good for dense graphs, but uses more space       |
 
-
+- V: Number of vertices (nodes)
+- E: Number of edges (connections between nodes)
+- log V: Comes from operations on the min-heap (priority queue)
 ---
 transition: slide-left
 ---
