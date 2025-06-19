@@ -68,7 +68,7 @@ transition: slide-left
 
 # Why Use Trees?
 
-- Efficient searching and sorting (e.g., Binary Search Trees).
+- Efficient searching and sorting (ex: Binary Search Trees).  
 - Used in parsing expressions, DOM structure in browsers.
 - Manage hierarchical data (e.g., file systems, organization charts).
 - Support for auto-complete, AI game trees, and databases.
