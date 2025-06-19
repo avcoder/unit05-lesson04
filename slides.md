@@ -97,13 +97,13 @@ transition: slide-left
 
 # Big O for Trees
 
-| **Operation**          | **Binary Tree (Unordered)** | **Binary Search Tree (Balanced)** | **Binary Search Tree (Unbalanced)** |
-| ---------------------- | --------------------------- | --------------------------------- | ----------------------------------- |
-| **Search**             | O(n)                        | O(log n)                          | O(n)                                |
-| **Insert**             | O(n)                        | O(log n)                          | O(n)                                |
-| **Delete**             | O(n)                        | O(log n)                          | O(n)                                |
-| **Traverse (DFS/BFS)** | O(n)                        | O(n)                              | O(n)                                |
-| **Access Min/Max**     | O(n)                        | O(log n)                          | O(n)                                |
+| **Operation**           | **Balanced BST** (e.g., AVL, Red-Black) | **Unbalanced BST** |
+| ----------------------- | --------------------------------------- | ------------------ |
+| **Search**              | O(log n)                                | O(n)               |
+| **Insert**              | O(log n)                                | O(n)               |
+| **Delete**              | O(log n)                                | O(n)               |
+| **Traversal (DFS/BFS)** | O(n)                                    | O(n)               |
+| **Access Min/Max**      | O(log n)                                | O(n)               |
 
 
 ---
