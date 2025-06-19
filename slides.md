@@ -346,26 +346,27 @@ transition: slide-left
 
 ```js
 // Create the graph
-const graph = new Graph();
+const fbGraph = new FacebookGraph();
 
-// Add vertices
-['A', 'B', 'C', 'D', 'E'].forEach(v => graph.addVertex(v));
+// Add users
+['Alice', 'Bob', 'Carla', 'David', 'Emma'].forEach(user => fbGraph.addUser(user));
 
-// Add edges
-graph.addEdge('A', 'B');
-graph.addEdge('A', 'C');
-graph.addEdge('B', 'D');
-graph.addEdge('C', 'D');
-graph.addEdge('D', 'E');
+// Add friendships
+fbGraph.addFriendship('Alice', 'Bob');
+fbGraph.addFriendship('Alice', 'Carla');
+fbGraph.addFriendship('Bob', 'David');
+fbGraph.addFriendship('Carla', 'David');
+fbGraph.addFriendship('David', 'Emma');
 ```
 
-       A
-      / \
-     B   C
-      \ / 
-       D
-       |
-       E
+       Alice
+       /   \
+    Bob    Carla
+      \   /
+      David
+        |
+       Emma
+
 
 
 ---
