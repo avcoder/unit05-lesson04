@@ -336,12 +336,11 @@ class: text-left
 # 10 minute break
 
 🍦 Cool Tips, Trends and Resources:
-- 🖇️ [Linked Lists](https://www.geeksforgeeks.org/linked-list-data-structure/)
-- 👩‍💻 [NeetCode](https://www.freecodecamp.org/news/prepare-for-technical-interviews-using-neetcode-150)
-- ➿ [Recursion](https://dev.to/codeguppy/recursion-in-javascript-practical-exercises-41hg)
-- [Visual Go](https://visualgo.net/en)
-- [Data Structure Visualization](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
-- [napkin ai](https://www.napkin.ai/)
+- 🌴 [DOM Tree](https://cdn.sanity.io/images/gpji8x82/production/5910b5ee6fa6049fedc86092a3bc6547d64d15b5-960x540.jpg?w=800)
+- 🗃️ [File System Tree](https://campmetrics.com/wp-content/uploads/elementor/thumbs/file-tree-qm5wri7mlgkq188exraancw854iiboxkaoathsos8g.png)
+- 🗺️ [Map Graph](https://miro.medium.com/v2/resize:fit:1400/1*JWLgsI1hRULw6xTS1AGP8A.png)
+- 👀 [Visual Go](https://visualgo.net/en)
+- 😵‍💫 [Data Structure Visualization](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
 
 <br>
 <hr>
