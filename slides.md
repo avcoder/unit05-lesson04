@@ -160,6 +160,16 @@ root.addChild(child2);
      /   \
     2     3
 
+```js
+// basic objects analogy:
+const son = { name: 'Bob' }
+const daughter = { name: 'Christie' }
+
+const mother = {
+  name: 'Ashley',
+  children: [son, daughter]
+}
+```
 
 ---
 transition: slide-left
