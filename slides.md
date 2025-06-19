@@ -494,6 +494,15 @@ transition: slide-left
 transition: slide-left
 ---
 
+# Exercise: 
+Find the shortest path from 0 to 4
+
+<img src="/assets/dij3.png" width="500">
+
+---
+transition: slide-left
+---
+
 # Pseudocode of Dijkstra's Algorithm (v.2)
 
 1. Start by assigning a distance value to every node:
@@ -510,6 +519,13 @@ transition: slide-left
     - d. Once done checking all neighbors, mark the current node as "visited" so we don't check it again.
 4. When all nodes have been visited, the shortest distance to each node from the start is known.
 
+---
+transition: slide-left
+---
+
+# Exercise: 
+
+- Follow along at https://www.cs.usfca.edu/~galles/visualization/Dijkstra.html
 
 
 ---
@@ -545,16 +561,6 @@ function dijkstra(graph, startNode):
     return distances
 ```
 
----
-transition: slide-left
----
-
-# Exercise: 
-Find the shortest path from 0 to 4
-
-<img src="/assets/dij3.png" width="500">
-
-- Follow along at https://www.cs.usfca.edu/~galles/visualization/Dijkstra.html
 
 ---
 transition: slide-left
