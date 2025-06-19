@@ -328,7 +328,7 @@ transition: slide-left
 ---
 layout: image-right
 transition: slide-left
-image: /assets/addy.png
+image: /assets/fcc.png
 backgroundSize: 400px 300px
 class: text-left
 ---
