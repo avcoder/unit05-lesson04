@@ -472,7 +472,29 @@ transition: slide-left
 transition: slide-left
 ---
 
-# Pseudocode of Dijkstra's Algorithm
+# Pseudocode of Dijkstra's Algorithm (v.1)
+
+1. Imagine you are starting in your hometown.
+2. Write down how far each city is from your hometown:
+    - Your hometown is 0 steps away.
+    - Every other city is “really far” (we can call it infinity).
+3. Make a list of all cities you need to visit.
+4. While you still have cities to visit:
+    - a. Look at the city on your list that is the closest so far.
+    - b. From that city, look at every city it connects to (its neighbors).
+    - c. For each neighbor:
+        - Add the number of steps from your hometown to the city you’re on,
+          plus the number of steps to get to the neighbor.
+        - If this total is smaller than what you wrote before for that neighbor,
+          change the number to the smaller one.
+    d. You are now done with the current city. Cross it off your list.
+5. When you’ve visited all the cities, you’ll know the shortest way to every city!
+
+---
+transition: slide-left
+---
+
+# Pseudocode of Dijkstra's Algorithm (v.2)
 
 1. Start by assigning a distance value to every node:
     - Set the distance to the starting node as 0.
@@ -489,6 +511,40 @@ transition: slide-left
 4. When all nodes have been visited, the shortest distance to each node from the start is known.
 
 
+
+---
+transition: slide-left
+---
+
+# Pseudocode of Dijstra's Algorithm (v.3) 
+
+```md
+function dijkstra(graph, startNode):
+    Create a map called distances, where every node is set to Infinity    // Step 1: Set up distances and visited
+    Set distances[startNode] to 0
+
+    Create a priority queue (min-heap) and add startNode with distance 0
+
+    Create a set to keep track of visited nodes
+
+    while priority queue is not empty: // Step 2: Loop until we’ve checked all nodes
+        currentNode ← remove the node with the lowest distance from the queue // Get the node with smallest distance
+
+        if currentNode has already been visited:
+            skip to the next iteration
+
+        mark currentNode as visited
+
+        for each neighbor of currentNode in graph:         // Step 3: Check all neighboring nodes
+            edgeWeight ← distance from currentNode to neighbor
+            newDistance ← distances[currentNode] + edgeWeight
+
+            if newDistance < distances[neighbor]:
+                update distances[neighbor] to newDistance
+                add neighbor to priority queue with newDistance
+
+    return distances
+```
 
 ---
 transition: slide-left
