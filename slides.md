@@ -110,6 +110,29 @@ transition: slide-left
 transition: slide-left
 ---
 
+# Binary Search Pseudocode using Trees
+
+```md
+Function search(value):
+    Set current = root
+
+    While current is not null:
+        If value is equal to current.value:
+            Return true (value found)
+
+        If value is less than current.value:
+            Move current to current.left
+
+        Else:
+            Move current to current.right
+
+    Return false (value not found)
+```
+
+---
+transition: slide-left
+---
+
 # Tree Creation: Usage
 
 ```js
