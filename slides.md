@@ -29,8 +29,183 @@ Algorithms and Structural Foundations - part 4/8
   </a>
 </div>
 
+---
+transition: slide-left
+---
+
+# Recap
+Imagine we have a sorted array: `[1, 2, 3, 4, 5, 6, 7]`
+
+- We can create stacks/queues/arrays using:
+   - regular array data structure
+   - linked list data structure
+- Binary Search allowed us to use recursion to search left side vs right side
+   - Can we do binary search on a linked list? 
+      - Do we have a way to "go left" using a single linked list?
+      - Do we have a way to pick the middle?
+   - Problem: Need a better data structure that is works better than O(n) to search/insert/delete a sorted list 
+
+---
+transition: slide-left
+---
+
+# Data Structure: Trees
+
+- A tree is a non-linear hierarchical data structure. (2-dimensional)
+- Unlike arrays or linked lists, trees branch out.
+- Consists of nodes connected by edges.
+- Has one root node and zero or more child nodes.
+- Common types: Binary Tree, Binary Search Tree, AVL Tree.
+
+<img src="/assets/tree.webp" width="700">
+
 <!--
 -->
+
+---
+transition: slide-left
+---
+
+# Why Use Trees?
+
+- Efficient searching and sorting (e.g., Binary Search Trees).
+- Used in parsing expressions, DOM structure in browsers.
+- Manage hierarchical data (e.g., file systems, organization charts).
+- Support for auto-complete, AI game trees, and databases.
+
+<img src="/assets/bst.png" width="700">
+
+---
+transition: slide-left
+---
+
+# Tree Terminology
+
+| **Term**    | **Definition**                                                          |
+| ----------- | ----------------------------------------------------------------------- |
+| **Node**    | A single element in a tree that holds a value and may have child nodes. |
+| **Root**    | The topmost node of the tree; has no parent.                            |
+| **Child**   | A node that descends from another node (its parent).                    |
+| **Parent**  | A node that has one or more children.                                   |
+| **Leaf**    | A node that has no children.                                            |
+| **Edge**    | A connection between two nodes (parent to child).                       |
+| **Depth**   | The number of edges from the root node to a given node.                 |
+
+---
+transition: slide-left
+---
+
+# Tree Creation: Usage
+
+```js
+const root = new TreeNode(1);
+const child1 = new TreeNode(2);
+const child2 = new TreeNode(3);
+root.addChild(child1);
+root.addChild(child2);
+```
+
+       1
+     /   \
+    2     3
+
+
+---
+transition: slide-left
+---
+
+# Tree Implementation
+
+```md
+1. Define a Node with:
+   - A value
+   - A list to store child nodes
+
+2. Create a function to add a child to a node:
+   - Add the child to the node's list of children
+```
+
+```js
+class TreeNode {
+  constructor(value) {
+    this.value = value;
+    this.children = [];
+  }
+
+  addChild(node) {
+    this.children.push(node);
+  }
+}
+```
+
+---
+transition: slide-left
+---
+
+# Data Structure: Graphs
+
+- A graph is a collection of nodes (vertices) and edges (connections).  It can be:
+   - Directed or Undirected
+   - Cyclic or Acyclic
+   - Weighted or Unweighted
+   - More general than trees (no root required, can have cycles).
+
+<img src="/assets/graph.webp" width="700">
+
+---
+transition: slide-left
+---
+
+# Why use Graphs?
+
+- Social networks (friends, followers).
+- Routing algorithms (Google Maps).
+- Recommendation engines (Amazon, Netflix).
+- Dependency graphs in compilers and build systems.
+- Knowledge graphs for AI and search engines.
+
+---
+transition: slide-left
+---
+
+# Graph Implementation 
+
+1. Define a Graph with:
+   - A map or dictionary to store each vertex and its list of connected vertices (adjacency list)
+2. Create a function to add a vertex:
+   - If the vertex does not exist in the adjacency list, add it with an empty list
+3. Create a function to add an edge between two vertices:
+   - Add each vertex to the other’s list (for an undirected graph)
+
+```js
+class Graph {
+  constructor() { this.adjacencyList = new Map() }
+
+  addVertex(vertex) {
+    if (!this.adjacencyList.has(vertex)) {
+      this.adjacencyList.set(vertex, []);
+    }
+  }
+
+  addEdge(v1, v2) {
+    this.adjacencyList.get(v1).push(v2);
+    this.adjacencyList.get(v2).push(v1); // undirected
+  }
+}
+```
+
+---
+transition: slide-left
+---
+
+# Trees vs Graphs
+
+| Feature   | Tree            | Graph                  |
+| --------- | --------------- | ---------------------- |
+| Structure | Hierarchical    | Network (flexible)     |
+| Root Node | Exactly one     | Not required           |
+| Cycles    | No              | Can have cycles        |
+| Direction | Always directed | Directed or undirected |
 
 
 ---
@@ -57,6 +232,12 @@ class: text-left
 
 - 🧪 [Enter anonymous lab questions](https://docs.google.com/forms/d/e/1FAIpQLSevvGARdHQikso-uLqFCO481MABKE5HofuSrlzEPMNQ2ZLykw/viewform?usp=dialog)
 - ℹ️ [Course feedback survey](https://circuitstream.typeform.com/to/ZoyYk7px#course_id=SoftwareAN&instructor=9514)
+
+---
+transition: slide-left
+---
+
+# Dijkstra's Algorithm
 
 ---
 transition: slide-left
