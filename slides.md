@@ -274,6 +274,15 @@ transition: slide-left
 | **Weighted Graph**     | A graph where edges have numerical values (weights) associated with them       |
 | **Cycle**              | A path where the first and last vertex are the same, and no other nodes repeat |
 
+---
+transition: slide-left
+---
+
+# 2 Ways to Represent a Graph
+
+- Adjacency List (most used) vs Adjacency List (takes up too much memory space)
+
+<img src="/assets/adjvs.svg" width="900">
 
 ---
 transition: slide-left
