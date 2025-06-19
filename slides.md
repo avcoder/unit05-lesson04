@@ -501,13 +501,13 @@ transition: slide-left
     - Set the distance to all other nodes as infinity (∞) because we haven't found a path to them yet.
 2. Create a list (or priority queue) of all the nodes that need to be checked.
 3. While there are still nodes to check:
-    a. Pick the node with the smallest distance value (let's call this the "current node").
-    b. Look at all the neighboring nodes connected to the current node.
-    c. For each neighbor:
+    - a. Pick the node with the smallest distance value (let's call this the "current node").
+    - b. Look at all the neighboring nodes connected to the current node.
+    - c. For each neighbor:
         - Calculate the distance from the start node to this neighbor by going through the current node.
         - If this new path is shorter than the distance we had recorded before:
             - Update the shortest distance for that neighbor.
-    d. Once done checking all neighbors, mark the current node as "visited" so we don't check it again.
+    - d. Once done checking all neighbors, mark the current node as "visited" so we don't check it again.
 4. When all nodes have been visited, the shortest distance to each node from the start is known.
 
 
